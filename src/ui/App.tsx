@@ -60,8 +60,8 @@ const App = () => {
       <p>When validation failed, focus on the erroneous form control and read its error message.</p>
       <p>This repo shows how to focus and alert when the user is submitting a form with invalid form controls.</p>
       <p>
-        To hide browser-native error tooltip, the form has <code>novalidate="true"</code> intentionally set. This prevent the
-        browser-native tooltip to show up as it cannot be styled by any means.
+        To hide browser-native error tooltip, the form has <code>novalidate="true"</code> intentionally set. This
+        prevent the browser-native tooltip to show up as it cannot be styled by any means.
       </p>
       <div className="playground">
         <form noValidate={true} onSubmit={handleSubmit} ref={formRef}>
@@ -138,8 +138,15 @@ const App = () => {
                 </li>
                 <li>
                   <Expectation>
-                    Screen reader should narrate "type a message", "edit", and "required" to indicate focus changed to the text box.
+                    Screen reader should narrate "type a message", "edit", and "required" to indicate focus changed to
+                    the text box.
                   </Expectation>
+                  <ul>
+                    <li>
+                      iOS/Android: They do not track focus. After clicking on "Send" button, screen reader do not
+                      read "type a message", "edit", and "required".
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
@@ -170,8 +177,15 @@ const App = () => {
                 </li>
                 <li>
                   <Expectation>
-                    Screen reader should narrate "type a message", "edit", and "required" to indicate focus changed to the text box.
+                    Screen reader should narrate "type a message", "edit", and "required" to indicate focus changed to
+                    the text box.
                   </Expectation>
+                  <ul>
+                    <li>
+                      iOS/Android: They do not track focus. After clicking on "Send" button, screen reader do not
+                      read "type a message", "edit", and "required".
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
