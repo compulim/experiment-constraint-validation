@@ -14,6 +14,7 @@
     "start:typescript": "npm run build:typescript -- --watch"
   },
   "dependencies": {
+    "classnames": "2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
