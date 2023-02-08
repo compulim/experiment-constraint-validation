@@ -47,7 +47,7 @@ input {
 }
 
 .expectation {
-  align-items: center;
+  align-items: first baseline;
   display: flex;
   gap: 0.2em;
   user-select: none;
@@ -61,4 +61,9 @@ input {
 
 .expectation--checked .expectation__badge {
   background-color: lightgreen;
+}
+
+.expectation__checkbox {
+  position: relative;
+  top: .12em;
 }

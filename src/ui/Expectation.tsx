@@ -13,7 +13,7 @@ const Expectation = ({ children }: PropsWithChildren<{}>) => {
   return (
     <Fragment>
       <label className={classNames('expectation', { 'expectation--checked': checked })}>
-        <input checked={checked} onInput={handleInput} type="checkbox" />
+        <input checked={checked} className="expectation__checkbox" onInput={handleInput} type="checkbox" />
         <span className="expectation__body">
           <span className="expectation__badge">EXPECT</span> {children}
         </span>
